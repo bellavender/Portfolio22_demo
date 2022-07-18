@@ -1,0 +1,1310 @@
+@charset "utf-8";
+
+/* 브라우저 리셋 */ 
+*{
+    margin: 0; 
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #202020;
+} 
+ol, ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #202020;
+}
+img{
+    vertical-align: top;
+}
+input{
+    vertical-align: top; 
+    font-family: 'Noto Sans KR', sans-serif;
+}
+button{
+    vertical-align: top;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.hide{
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/*  */
+
+/* 기본화면값 - 모바일 기준*/
+
+/* 헤더 */
+
+.gnb_list{
+    position: fixed;
+    top: -160px;
+    right: 15px;
+    z-index: 300;
+    /* overflow: hidden; */
+    font-weight: 500;
+    line-height: 1.8;
+    transition: top 0.8s;
+}
+
+
+/* 본문 */
+
+/* #0 .Cover 모바일 화면 */
+.Cover{
+    height: 812px;
+    padding-top: 150px;
+}
+.cover_in{
+    position: relative;
+    height: 430px;
+    /* object-fit: cover; */
+    background-image: url(../img/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(128, 173, 158); */
+}
+.cover_text{
+    position: absolute;
+    right: -60px;
+    font-size: 20px; 
+    font-weight: 600; 
+    transform: rotate(90deg);
+}
+
+/* #1 .Intro 모바일 화면*/
+#Intro{
+    padding: 0 20px;
+}
+.intro_in{
+    padding-top: 50px;
+}
+.title_pc{
+    display: none;
+}
+.intro_in h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.intro_img{
+    width: 250px;
+    height: 250px;
+    margin: 35px auto;
+    background-color: lightslategray;
+    background-image: url(../img/introimg.jpg);
+    background-size: cover;
+}
+.intro_img img{
+    width: 100%;
+    height: auto;
+}
+.intro_text{
+
+}
+.intro_text>div{
+
+}
+.intro_text h3{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.intro_text p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.intro_PC{
+    display: none;
+}
+.intro_left{
+    margin-bottom: 20px;
+}
+
+.intro_01{
+    margin-bottom: 20px
+}
+.intro_03{
+    margin-bottom: 20px
+}
+
+.intro_02 p{
+    letter-spacing: 0.5px;
+}
+
+/* #2 .Skill 모바일 화면 */
+
+#Skill{
+    padding: 0 20px;
+    margin: 20px;
+}
+.skill_in{
+    position: relative;
+    padding-top: 100px;
+}
+.skill_in h2{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.skill_in h3::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: ;
+    left: 14px;
+    width: 2px;
+    height: 10px;
+    padding-top: 8px;
+    /* 가상 바 자연스럽지 않음 */
+    border-radius: 50%;
+    background-color: #202020;
+}
+.skill_in h3{
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skill_01{
+    margin-bottom: 45px;
+}
+.skill_02{
+    margin-bottom: 45px;
+}
+
+
+.skill_percent h3{
+    /* margin-bottom: 43px; */
+}
+.percent_box{
+    display: flex;
+    justify-content: space-between;
+    max-width: 530px;
+    padding: 0 3%;
+    margin: 43px 0;
+}
+
+/* 퍼센트 원  */
+.chart{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: ;
+    background-color: #7977e2;
+}
+span.center{
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 13px;
+    font-weight: 500;
+    transform: translate(-50%,-50%);
+}
+
+.skill_text span{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skill_text {
+    padding: 0 10px;
+    line-height: 1.8;
+}
+.skill_text>p:first-child{
+    margin-bottom: 30px;
+}
+.percent_box .chart.percent3{
+    background-color: transparent;
+}
+
+
+/* #3 .Web_App 모바일 화면 */
+
+#Web_App{
+    padding: 0 20px;
+    margin-bottom: 100px;
+}
+
+.WebApp_in{
+    /* max-width: 460px; */
+    /* 태블릿에맞춰서 */
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.Web_page h3{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.Web_page h4{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: ;
+}
+.Web_page img{
+    margin-bottom: 30px;
+    width: 100%;
+}
+.webapp_text{
+    position: relative;
+}
+.webapp_text h5{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.webapp_text h2{
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+.webapp_text p{
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.web_link{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 85px;
+    height: 30px;
+    padding-left: 8px;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+.web_link a{
+    display: block;
+    width: 85px;
+    height: 30px;
+    line-height: 2.5;
+    font-size: 12px;
+}
+.web_link a::before{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #000;
+}
+.web_link a::after{
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(45deg);
+}
+
+.webapp_text h6{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.web_info{
+    position: relative;
+}
+.web_info p{
+    font-size: 12px;
+}
+
+.web_color{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.colorlist{
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+}
+.web_color p{
+    width: 44px;
+    height: 44px;
+    border-radius: 20%;
+    text-align: center;
+    font-size: 10px;
+    line-height: 4.3;
+}
+
+/* 자바스크립트 css */
+.js .slider-single > div:nth-child(1n+2) { 
+    display: none;
+}
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { 
+    display: block;
+}
+
+h3 {
+    /* background: #f0f0f0;
+    color: #3498db;
+    font-size: 2.25rem;
+    margin: .5rem;
+    padding: 2%; */
+    position: relative;
+    /* text-align: center; */
+}
+
+/* .slider-single h3 {
+    line-height: 10rem;
+} */
+
+.slider-nav h3::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+    /* width: 150px;
+    height: 120px;
+    object-fit: cover; */
+}
+
+.slider-nav h3 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide { 
+    display: block;
+    cursor: pointer; 
+    filter: blur(1px);
+    filter: contrast(60%);
+    transform: scale(0.9);
+    /* 이거 보이는 부분은 크게, 안보이는 부분은 젝게 해야할 듯  */
+}
+
+.slick-slide.is-active{
+    filter: none;
+    transform: scale(1);
+    
+}
+.slider-nav .slick-slide:hover{
+
+}
+
+
+.slick-slide.is-active h3 {
+    color: #c00;
+}
+
+
+.slider.slider-nav{
+    /* width: 100px;
+    height: auto; */
+    /* img는 무조건 100%, 슬라이드 사이즈를 조정 */
+    /* 이거 보이는 부분은 크게,  */
+}
+.slider .slider-nav{
+    padding-left: 10px;
+    /* padding-left: 20px;
+    margin-right: 10px; */
+}
+.slider.slider-nav>div{
+    /* padding: 0 10px; */
+}
+.slider.slider-nav img{
+    padding-left: 10%;
+    width: 80%;
+}
+
+
+/* 버튼 */
+
+.slider-single{
+    position: relative;
+}
+
+.slider-single .slick-arrow{
+    position: absolute;
+    bottom: -50px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    text-indent: -99999px;
+    overflow: hidden;
+    z-index: 500;
+    background-color: transparent;
+}
+
+.slick-prev.slick-arrow{
+    /* background-color: transparent; */
+}
+
+.slider-nav .slick-arrow{
+    display: none;
+}
+
+
+
+
+
+/* 자바스크립트 css 끝 */
+
+
+
+
+/* 4 Ghrapic 모바일 화면 */
+#Ghrapic{
+    padding: 0 20px;
+}
+
+.Ghrapic_in{
+    padding-top: 50px;
+}
+.Ghrapic_in h2{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100%-40px);
+}
+.grid_column{
+    flex: 50%;
+    max-width: 50%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+.grid_column img{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 0px;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.banner_img, .banner_bg{
+    display:inline-block;
+    position: relative;
+  }
+  .banner_img:hover:after,
+  .banner_img:hover > .hover_text,
+  .banner_bg:hover:after,
+  .banner_bg:hover > .hover_text
+  {
+    display:block;
+  }
+  .banner_img:after,.banner_bg:after,.hover_text{
+    display:none;
+  }
+  .banner_img:after,.banner_bg:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  .banner_img {
+    overflow: hidden;
+  }
+  .banner_img img{
+    height: 100%;
+  }
+  .banner_img:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  .hover_text {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    color: #fff;
+    z-index: 20;
+    font-weight: ;
+    font-size: 14px;
+  }
+  .hover_text p{
+    text-align: center;
+  }
+
+
+
+
+/* 푸터 */
+
+#footer{
+
+}
+.footer_in{
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #302d2e;
+    color: #fff;
+}
+.footer_in h2{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer_in p{
+    margin-bottom: 10px;
+    opacity: 90%;
+    font-weight: 500;
+}
+.email, .phone{
+    letter-spacing: 0.2em;
+}
+
+.copyright{
+    padding-top: 80px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+/* 743 태블릿화면 */
+@media all and (min-width:743px) {
+
+    /* 헤더 */
+    .gnb_list{
+        display: block;
+    }
+
+    /* 본문 */
+
+    /* #0 .Cover 743px 태블릿화면 */
+    .Cover{
+        height: 1133px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 200px;
+        box-sizing: border-box;
+    }
+    .cover_in{
+        position: relative;
+        padding: ;
+        height: 430px;
+        object-fit: cover;
+        background-color: rgb(128, 173, 158);
+    }
+    .cover_text{
+        position: absolute;
+        top: 20px;
+        right: -125px;
+        font-size: 28px; 
+        font-weight: 600; 
+        transform: rotate(90deg);
+    }
+
+    /* #1 .Intro 743px 태블릿화면 */
+    #Intro{
+        padding: 0 22px;
+    }
+    .intro_in{
+        padding-top: 120px;
+    }
+    .title_pc{
+        display: none;
+    }
+    .intro_in h1{
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    .intro_img{
+        /* width: 100%; */
+        height: 252px;
+        margin: 35px auto;
+        /* 여기..이상함 */
+        /* padding: 0 50px; */
+    }
+    .intro_img img{
+        width: 100%;
+    }
+    .intro_img{
+        width: 457px;
+        height: 457px;
+        margin: 35px auto;
+        background-color: lightslategray;
+    }
+
+    .intro_text{
+
+        padding-left: 100px;
+        padding-right: 55px;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* .intro_text{
+        min-width: 800px;
+        padding-left: 100px;
+        padding-right: 55px;
+     태블릿으로안에다가넣어야함..이거사이즈조절하기
+    } */
+
+    .intro_text h3{
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .intro_text p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 2;
+    }
+
+    .intro_01{
+        margin-bottom: 70px
+    }
+    .intro_03{
+        margin-bottom: 70px;
+    }
+        
+    .intro_02 p{
+        letter-spacing: 0.2px;
+    }  
+
+    /** #2 .Skill 스킬 페이지 763px 태블릿 화면 시작 */
+    #Skill{
+        padding-top: 120px;
+    }
+    .skill_in{
+        margin: 0 auto;
+        padding: 0 100px;
+    }
+  
+    .percent_box{
+        width: 340px;
+        padding: 0;
+    }
+
+    /* #3 .Web_App 763px 태블릿 화면 */
+
+    #Web_App {
+        padding: 0 140px;
+    }
+    .WebApp_in{
+        padding-top: 100px;
+    }
+    .slider-single .slick-arrow{
+        position: absolute;
+        bottom: -65px;
+        width: 20px;
+        height: 20px;
+        border: none;
+        text-indent: -99999px;
+        z-index: 500;
+        background-color: transparent;
+    }
+    .slider-single .slick-prev{
+        left: -50px;
+        border-top: 1px solid #202020;
+        border-left: 1px solid #202020;
+        transform: rotate(-45deg);
+    
+    }
+    .slider-single .slick-next{
+        right: -50px;
+        border-top: 1px solid #202020;
+        border-left: 1px solid #202020;
+        transform: rotate(135deg);
+    }
+
+
+
+    /* #4 .Ghrapic 763px 태블릿 화면 */
+    .Ghrapic{
+        padding: 0 30px;
+    }
+    .Ghrapic_in{
+        margin: 0 auto;
+    }
+    .Ghrapic_in h2{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .grid_column{
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+    .hover_text {
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        color: #fff;
+        z-index: 20;
+        font-weight: ;
+        font-size: 16px;
+      }
+
+
+    /* 태블릿 부분에서 1200부터 PC화면으로. */
+
+
+    /* 푸터 */
+
+} /* 768 태블릿화면 끝 */
+
+
+
+/* 1200 PC화면  */
+@media screen and (min-width:1200px){
+
+    /* 헤더 */
+    .gnb_list{
+        right: 25px;
+        font-size: 16px;
+    }
+
+    /*  */
+
+
+    /* 본문 */
+    
+    /* #0 Cover 커버 페이지 1200px 화면 */
+    .Cover{
+        height: 1024px;
+        /* padding-top: 100px; */
+        padding: 150px 220px;
+        box-sizing: border-box;
+    }
+    .cover_in{
+        position: relative;
+        padding: ;
+        height: 100%;
+        object-fit: cover;
+        background-color: rgb(128, 173, 158);
+    }
+    .cover_text{
+        position: absolute;
+        top: 0px;
+        right: -140px;
+        font-size: 32px; 
+        font-weight: 600; 
+        transform: rotate(90deg);
+    }
+
+    /* #1 ntro 인트로 페이지 1200px화면 */
+    #Intro{
+        padding: 0 22px;
+        margin-bottom: 110px;
+    }
+    .intro_in{
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 250px;
+    }
+    .title_mo{
+        display: none;
+    }
+    .title_pc{
+        position: absolute;
+        top: 160px;
+        right: -110px;
+        display: block;
+        /* margin-bottom: 30px; */
+        text-align: ;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    .intro_img{
+        width: 500px;
+        height: 500px;
+        margin: 0;
+        background-color: lightslategray;
+    }
+
+    .intro_box{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .intro_PC{
+        display: none;
+        width: 600px;
+        margin-bottom: 44px;
+    }
+    .intro_text{
+        width: 600px;
+        display: flex;
+        padding: 0;
+    }
+    .intro_text p{
+        letter-spacing: 2;
+    }
+
+    .intro_text h3{
+        margin-bottom: 26px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+
+    /* #2 .SKill 1200px 화면 */
+    #Skill{
+
+    }
+    .skill_in{
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .skill_01 , .skill_02 , .skill_03{
+        display: flex;
+        justify-content: space-between;
+    }
+    .skill_in h2{
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .skill_in h3::before{
+        position: absolute;
+        content: "";
+        display: block;
+        left: 5px;
+        width: 2px;
+        height: 10px;
+        padding-top: 8px;
+        border-radius: 50%;
+        background-color: #202020;
+    }
+    .skill_in h3{
+        padding-left: 15px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .percent_box{
+        width: 510px;
+        /* margin-right: 126px; */
+    }
+    .chart{
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: ;
+        background-color: rgb(121, 119, 226);
+    }
+    span.center{
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 80px;
+        font-size: 16px;
+        font-weight: 500;
+        transform: translate(-50%,-50%);
+    }
+
+    .skill_text{
+        width: 540px;
+        font-size: 14px;
+    }
+    .skill_01 .skill_text{
+        padding-top: 55px;
+    }
+    .skill_02 .skill_text{
+        padding-top: 20px;
+    }
+    .skill_03 .skill_text{
+        padding-top: 20px;
+    }
+
+
+    /* #3 .WebApp 웹 앱 페이지 1200px */
+    #Web_App{
+        padding: 0;
+        /* padding-top: 100px; */
+    }
+    .WebApp_in{
+        max-width: initial;
+        width: 760px;   
+    }
+    .Web_content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .Web_page h3{
+        margin-bottom: 15px;
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .Web_page h4{
+        margin-bottom: 40px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .Web_content img{
+        /* width: 375px;
+        height: 375px; */
+        width: 50%;
+        height: 50%;
+    }
+    .webapp_text h5{
+        margin-bottom: 15px;
+        font-size: 20px
+    }
+    .webapp_text h2{
+        margin-bottom: 20px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .webapp_text p{
+        margin-bottom: 120px;
+        font-size: 16px;
+    }
+    .web_link{
+        position: absolute;
+        top: 190px; 
+        left: 0;
+        width: 112px;
+        height: 36px;
+    }
+    .web_link a{
+        width: 112px;
+        height: 40px;
+        padding-left: 5px;
+        font-size: 12px;
+        line-height: 2.8;
+    }
+    .web_info h6{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .web_info p{
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .web_info .web_color{
+        position: static;
+    }
+    .web_color .colorlist p{
+        width: 55px;
+        height: 55px;
+        font-size: 12px;
+    }
+    
+    .web_link a::before{
+        position: absolute;
+        right: 15px;
+        top: 18px;
+        content: "";
+        display: block;
+        width: 15px;
+        height: 1px;
+        background-color: #000;
+    }
+    .web_link a::after{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        transform: rotate(45deg);
+    }
+
+    /* 자바스크립트css */
+    .slider.slider-nav{
+        padding-top: 10px;
+    }
+    .slider.slider-nav img{
+        width: 180px;
+        height: 134px;
+        object-fit: cover;
+    }
+    
+    .slider .slick-arrow{
+        position: absolute;
+        bottom: -80px;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background-color: transparent;
+        text-indent: -99999px;
+        z-index: 500;
+    }
+    
+    .slider-single .slick-prev{
+        left: -80px;
+        border-top: 2px solid #202020;
+        border-left: 2px solid #202020;
+    
+    }
+    .slider-single .slick-next{
+        right: -80px;
+        border-top: 2px solid #202020;
+        border-left: 2px solid #202020;
+    }
+
+    /* webapp부분 */
+    .slick-slide.is-active{
+        filter: none;
+    }
+    
+    .slick-slide.is-active h3 {
+        color: #c00;
+    }
+    
+    .slider.slider-nav{
+        /* width: 100px;
+        height: auto; */
+        /* img는 무조건 100%, 슬라이드 사이즈를 조정 */
+        /* 이거 보이는 부분은 크게,  */
+    }
+    .slider .slider-nav{
+        padding-left: 10px;
+        /* padding-left: 20px;
+        margin-right: 10px; */
+    }
+    .slider.slider-nav>div{
+        /* padding: 0 10px; */
+    }
+    .slider.slider-nav img{
+        padding-left: 10%;
+        width: 80%;
+        height: auto;
+    }
+
+
+
+    /*  */
+
+
+    /* #4 .Ghrapic 그래픽 페이지 1200px PC화면*/
+    #Ghrapic{
+        margin-bottom: 100px;
+    }
+    .Ghrapic_in{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .Ghrapic_in h2{
+        margin-bottom: 100px;
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .grid_column{
+        flex: 25%;
+        max-width: 25%;
+        /* padding: 0 20%; */
+    }
+    /* .grid_column img{
+        padding: 25px 0;
+    } */
+    .hover_text {
+        position: absolute;
+        top: 45%;
+        left: 85px;
+        color: #fff;
+        z-index: 20;
+        font-weight: ;
+        font-size: 18px;
+      }
+
+      /* #footer */
+      .footer_in{
+      }
+      .footer_in h2{
+        margin-bottom: 100px;
+        font-size: 32px;
+        font-weight: 500;
+      }
+      .footer_in p{
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+
+      .footer_in .copyright{
+        font-size: 12px;
+        font-weight: 300;
+      }
+
+
+
+    
+
+} /* 1200px PC화면 끝 */
+
+
+/* 1440 PC화면  */
+@media all and (min-width:1440px){
+    /* 헤더 */
+
+    /* 본문 */
+
+    /* #1 .Intro 인트로 페이지 1440px PC화면 */
+
+    #Intro{
+        padding: 0 22px;
+    }
+    .intro_in{
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .title_mo{
+        display: none;
+    }
+    /* .title_pc{
+        position: absolute;
+        top: 40px;
+        left: 600px;
+        display: block;
+        text-align: ;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.3;
+    } */
+    .intro_img{
+        width: 500px;
+        height: 500px;
+        margin: 0;
+        background-color: lightslategray;
+    }
+
+    .intro_box{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .intro_PC{
+        display: none;
+        width: 600px;
+        margin-bottom: 44px;
+    }
+    /* .intro_text{
+        width: 600px;
+        display: flex;
+        padding: 0;
+    } */
+
+    .intro_text h3{
+        margin-bottom: 26px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+
+    /* #2 .Skill 스킬페이지 1400px PC화면 */
+
+    /* #3 .Web_App 웹앱페이지 1400px PC화면 */
+
+    #Web_App{
+        
+    }
+    .WebApp_in{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .slider .slick-arrow{
+        position: absolute;
+        bottom: -120px;
+    }
+
+
+
+    /* 푸터 */
+
+
+    
+} /* 1400px PC화면 끝 */
+
+/* Top 버튼 */
+.top{
+    position: fixed;
+    right: 4%;
+    bottom: 70px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #7977e2;
+    text-align: center;
+    line-height: 4.2;
+    font-weight: 400;
+    color: #7977e2;
+    
+    /* transform: rotate(45deg); */
+}
+
+.top::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    border-top: 2px solid #7977e2;
+    border-left: 2px solid #7977e2;
+}
+
+
